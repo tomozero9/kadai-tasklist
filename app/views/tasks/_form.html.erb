@@ -18,7 +18,7 @@
 
       <div class="form-group">
         <%= f.label :status, 'ステータス'%>
-        <%= f.text_field :status, class: 'form-control' %>
+        <%= f.select :status, [['未対応'],['対応中'],['対応済み']]%>
       </div>
 
       <%= f.submit '登録', class: 'btn btn-primary' %>  
